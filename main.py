@@ -2,7 +2,7 @@ import os
 import subprocess
 import time
 
-PATH = r"S:\Marketing\Commun\00. Documentation technique\4. Modifications à valider\FILTRY"
+PATH = r"S:\Marketing\Commun\00. Documentation technique\4. Modifications à valider\LCY"
 
 
 class Quality:
@@ -15,7 +15,7 @@ class Quality:
 
 
 def compress_pdf(path_in: str, path_out: str, quality: str = Quality().ebook):
-    executable = r"C:\Program Files\gs\gs10.04.0\bin\gswin64c.exe"
+    executable = r"C:\Program Files\gs\gs10.05.1\bin\gswin64c.exe"
     gs_command = [
         executable,
         "-sDEVICE=pdfwrite",
